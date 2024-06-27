@@ -1,0 +1,114 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.game-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.counter {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.feedback {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.score {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+    button {
+        background-color: #8A2BE2; /* Purple */
+        color: white;
+    }
+    button:hover {
+        background-color: #7A1BD2; /* Darker purple */
+    }
+}
+
+/* Computers */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 16px;
+    }
+    button {
+        background-color: #2196F3; /* Blue */
+        color: white;
+    }
+    button:hover {
+        background-color: #1976D2; /* Darker blue */
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 14px;
+    }
+    button {
+        background-color: #FF9800; /* Orange */
+        color: white;
+    }
+    button:hover {
+        background-color: #FB8C00; /* Darker orange */
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+    button {
+        background-color: #F44336; /* Red */
+        color: white;
+    }
+    button:hover {
+        background-color: #E53935; /* Darker red */
+    }
+}
